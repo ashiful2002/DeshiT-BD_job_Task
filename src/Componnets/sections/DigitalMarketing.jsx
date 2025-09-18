@@ -1,15 +1,15 @@
 import React from "react";
 import Section from "../Section/Section";
 
-import group10 from "../../assets/group 10.jpg";
-import group11 from "../../assets/group 11.jpg";
-import group12 from "../../assets/group 12.jpg";
-import group13 from "../../assets/group 13.jpg";
-import group14 from "../../assets/group 14.jpg";
-import group15 from "../../assets/group 15.jpg";
-import group16 from "../../assets/group 16.jpg";
-import group17 from "../../assets/group 17.jpg";
-import group18 from "../../assets/group 18.jpg";
+import group10 from "../../assets/Group10.jpg";
+import group11 from "../../assets/Group11.jpg";
+import group12 from "../../assets/Group12.jpg";
+import group13 from "../../assets/Group13.jpg";
+import group14 from "../../assets/Group14.jpg";
+import group15 from "../../assets/Group15.jpg";
+import group16 from "../../assets/Group16.jpg";
+import group17 from "../../assets/Group17.jpg";
+import group18 from "../../assets/Group18.jpg";
 
 const marketingItems = [
   {

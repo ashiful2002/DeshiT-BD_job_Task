@@ -3,7 +3,8 @@ import heroBg from "../../assets/Vector 1.jpg";
 import phone2 from "../../assets/mobile2 1.png";
 import app from "../../assets/Frame.jpg";
 import web from "../../assets/Frame-1.jpg";
-import mobile from "../../assets/group.jpg";
+import mobile from "../../assets/Group.jpg";
+import MobileSidebar from "../../Layout/Navbar/MobileNavbar";
 
 const Hero = () => {
   const navs = (
@@ -39,17 +40,24 @@ const Hero = () => {
         <div className="absolute inset-0"></div>
 
         {/* Header */}
-        <header className="relative z-10 flex items-center justify-between px-4 sm:px-8 md:px-10 py-4 md:py-6 text-white">
+        <header className="sticky top-0 z-10 flex items-center justify-between px-4 sm:px-8 md:px-10 py-4 md:py-6 text-white">
           <div>
             <a href="#">
               <img width={150} src={navLogo} alt="logo" />
             </a>
           </div>
-          <nav>
-            <ul className="hidden md:flex gap-6 lg:gap-10 font-medium tracking-wide">
+
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex">
+            <ul className="flex gap-6 lg:gap-10 font-medium tracking-wide">
               {navs}
             </ul>
           </nav>
+
+          {/* Mobile Sidebar */}
+          <div className="md:hidden">
+            <MobileSidebar />
+          </div>
         </header>
 
         {/* Hero Content */}
@@ -138,7 +146,7 @@ const Hero = () => {
               className="w-12 sm:w-14 mx-auto mb-2 sm:mb-3"
               alt="web"
             />
-            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
+            <h3 className="texzt-2xl sm:text-3xl font-bold text-gray-900">
               25+
             </h3>
             <p className="text-sm sm:text-base text-gray-500">

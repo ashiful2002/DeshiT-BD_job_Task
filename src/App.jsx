@@ -1,12 +1,11 @@
 import React from "react";
-import Footer from "./Layout/Footer/Footer";
 import Hero from "./Componnets/Header/Hero";
 import Services from "./Componnets/sections/Services";
 import Products from "./Componnets/sections/Products";
 import Projects from "./Componnets/sections/Projects";
 import DigitalMarketing from "./Componnets/sections/DigitalMarketing";
 import Technology from "./Componnets/sections/Technology";
-import WorksWith from "./Componnets/sections/worksWith";
+import WorksWith from "./Componnets/sections/WorksWith";
 import Contact from "./Componnets/sections/Contact";
 import Fotter from "./Componnets/sections/Fotter";
 
