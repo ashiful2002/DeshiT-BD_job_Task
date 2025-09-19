@@ -6,6 +6,7 @@ import quran from "../../assets/quran.jpg";
 import sleeptot from "../../assets/sleeptot.jpg";
 import sbi from "../../assets/sbi.jpg";
 import cinebaz from "../../assets/cinebaz.jpg";
+import circle from "../../assets/circle4.jpg";
 import { motion } from "framer-motion";
 const products = [
   { id: 1, title: "shoop news", img: shoop },
@@ -18,11 +19,18 @@ const products = [
 const Projects = () => {
   return (
     <Section id="projects">
-      <h1 className="section-title mt-22">
+      <h1 className="section-title mt-22 ">
         Our <span>Developed</span> Projects
       </h1>
-
-      <div className="grid grid-cols-1 mb-12 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="absolute z-0">
+        <img
+          src={circle}
+          width={900}
+          className="mt-32 lg:ml-[800px] lg:-mt-32"
+          alt=""
+        />
+      </div>
+      <div className="grid grid-cols-1 mb-12 md:grid-cols-2 lg:grid-cols-3 gap-5 relative">
         {products.map((product, index) => (
           <motion.dev
             key={product.id}

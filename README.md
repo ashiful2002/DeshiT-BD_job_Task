@@ -1,8 +1,11 @@
 # DeshiT-BD Landing Page  
+Though the task title was "MERN Project Development"
+But there was nothing but designing a landing page. So i just designed the landing page. 
+But here the most tricky part was to design the digital marketing section, it takes too much time to design but i can't make it perfect as the Figma design. I just did what I could. If it will be a full MERN or CRUD operational project, this will be easy for me to do. 
 
 A modern, responsive landing page built with **React + Vite** for the company **DeshiT-BD**. The design focuses on performance, clean UI, and smooth user experience.  
 
----
+
 
 ## 🚀 Features  
 - ⚡️ Built with **Vite** for fast development and optimized builds  
@@ -57,13 +60,10 @@ npm run preview
 ---
 
 ## 🌐 Deployment  
-- [Vercel](https://desh-it-bd-six.vercel.app)  
+- [Live Link](https://desh-it-bd-six.vercel.app)  
 
 
-For Vercel:  
-```bash
-npm run build
-# then deploy the dist/ folder
+
 ```
 
 ---
