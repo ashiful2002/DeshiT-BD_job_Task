@@ -47,6 +47,7 @@ const Technology = () => {
             <img
               key={tech.index}
               src={tech.img}
+              width={70}
               className=""
               alt={tech.index}
             />

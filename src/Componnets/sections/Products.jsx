@@ -6,6 +6,8 @@ import parcel from "../../assets/parcel.jpg";
 import school from "../../assets/school.jpg";
 import inventory from "../../assets/inventory.jpg";
 import logistics from "../../assets/logistics.jpg";
+import { motion } from "framer-motion"; // <-- import Framer Motion
+
 const products = [
   { id: 1, title: "gym management system", img: gym },
   { id: 2, title: "Transpiration Tracker", img: tracker },
@@ -16,16 +18,20 @@ const products = [
 ];
 const Products = () => {
   return (
-    <Section>
-      <h1 className="section-title">
+    <Section id="products">
+      <h1 className="section-title mt-22">
         Our <span>Products</span>
       </h1>
 
-      <div className="grid grid-cols-1 mb-12 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className=" grid grid-cols-1 mb-16 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {products.map((product, index) => (
-          <div
+          <motion.div
             key={product.id}
             className="relative mt-8 "
+            initial={{ opacity: 0, y: 50 }} // start hidden & slightly below
+            whileInView={{ opacity: 1, y: 0 }} // animate when visible
+            viewport={{ once: false, amount: 0.3  }}
+            transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
           >
             <img
               className="rounded-3xl w-full"
@@ -35,7 +41,7 @@ const Products = () => {
             <h4 className="absolute shadow-xl -mt-7 capitalize z-30 text-center bg-white rounded-lg px-8 py-3 dark:text-[var(--text-color)] left-10 right-10 mx-auto">
               {product.title}
             </h4>
-          </div>
+          </motion.div>
         ))}
       </div>
       <div className=" flex items-center justify-center">
